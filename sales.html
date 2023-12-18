@@ -15,6 +15,11 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.datatables.net/1.13.7/css/dataTables.bootstrap5.min.css"
+    />
     <link rel="stylesheet" href="css/style.css" />
     <meta name="description" content="" />
 
@@ -31,16 +36,34 @@
                 <h4>Client LOGO</h4>
               </a>
               <ul>
-                <li ><a href=""><i class="fas fa-home"></i>Home</a></li>
-                <li><a href=""><i class="fas fa-university"></i>Banks</a></li>
-                <li><a href=""><i class="fas fa-chart-pie"></i>Purchases</a></li>
-                <li class="active"><a href=""><i class="fas fa-cog"></i>Sales</a></li>
-                <li><a href=""><i class="fas fa-file-alt"></i>Documents</a></li>
-                <li><a href=""><i class="fas fa-bell"></i>Notifications</a></li>
-                <li><a href=""><i class="fas fa-sms"></i>Messages</a></li>
-                <li><a href=""><i class="fas fa-sign-out-alt"></i>Logout</a></li>
+                <li>
+                  <a href="./index.html"><i class="fas fa-home"></i>Home</a>
+                </li>
+                <li>
+                  <a href=""><i class="fas fa-university"></i>Banks</a>
+                </li>
+                <li>
+                  <a href=""><i class="fas fa-chart-pie"></i>Purchases</a>
+                </li>
+                <li class="active">
+                  <a href=""><i class="fas fa-cog"></i>Sales</a>
+                </li>
+                <li>
+                  <a href=""><i class="fas fa-file-alt"></i>Documents</a>
+                </li>
+                <li>
+                  <a href=""><i class="fas fa-bell"></i>Notifications</a>
+                </li>
+                <li>
+                  <a href=""><i class="fas fa-sms"></i>Messages</a>
+                </li>
+                <li>
+                  <a href=""><i class="fas fa-sign-out-alt"></i>Logout</a>
+                </li>
               </ul>
-              <a href="" class="help"><i class="fab fa-hire-a-helper"></i>Help</a>
+              <a href="" class="help"
+                ><i class="fab fa-hire-a-helper"></i>Help</a
+              >
             </div>
           </div>
           <div class="col-md-10">
@@ -48,34 +71,134 @@
               <div class="bg-white d-flex">
                 <h4>Transaction search</h4>
                 <form action="">
-                    <input type="search" name="search" id="">
-                    <button><i class=" fas fa-search "></i></button>
+                  <input type="search" name="search" id="" />
+                  <button><i class="fas fa-search"></i></button>
                 </form>
               </div>
-              <button class="invoice"><span>New Invoice</span><i class="far fa-plus-square"></i></button>
-              <button class="invoice"><span>New Quote</span><i class="far fa-plus-square"></i></button>
+              <button class="invoice">
+                <span>New Invoice</span><i class="far fa-plus-square"></i>
+              </button>
+              <button class="invoice">
+                <span>New Quote</span><i class="far fa-plus-square"></i>
+              </button>
             </div>
 
             <!-- 3rd section -->
             <div class="sales-tab mt-4">
-                <ul class="nav nav-tabs">
-                    <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="#">Invoices</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Quotes</a>
-                    </li>
-                  </ul>
+              <nav>
+                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                  <button
+                    class="nav-link active"
+                    id="nav-home-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#nav-home"
+                    type="button"
+                    role="tab"
+                    aria-controls="nav-home"
+                    aria-selected="true"
+                  >
+                    Invoices
+                  </button>
+                  <button
+                    class="nav-link"
+                    id="nav-profile-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#nav-profile"
+                    type="button"
+                    role="tab"
+                    aria-controls="nav-profile"
+                    aria-selected="false"
+                  >
+                    Quotes
+                  </button>
+                </div>
+              </nav>
+              <div class="tab-content" id="nav-tabContent">
+                <div
+                  class="tab-pane fade show active"
+                  id="nav-home"
+                  role="tabpanel"
+                  aria-labelledby="nav-home-tab"
+                >
+                  <table
+                    id="example"
+                    class="table table-striped"
+                    style="width: 100%"
+                  >
+                    <thead>
+                      <tr>
+                        <th>NNUMBER</th>
+                        <th>CLIENT NAME</th>
+                        <th>AMOUNT ET</th>
+                        <th>AMOUNT IT</th>
+                        <th>STATUS</th>
+                        <th>BQ</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>F00134</td>
+                        <td>Sté CAP CONSULTING</td>
+                        <td>250€</td>
+                        <td>250€</td>
+                        <td>EN ATTENTE</td>
+                        <td>
+                          <a href=""><i class="fas fa-close"></i></a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>-</td>
+                        <td>JEAN DORSAK</td>
+                        <td>120,50€</td>
+                        <td>120,50€</td>
+                        <td>BROUILLON.</td>
+                        <td>
+                          <a href=""><i class="fas fa-close"></i></a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>F00132</td>
+                        <td>ABBY</td>
+                        <td>250,00€</td>
+                        <td>250,00€</td>
+                        <td>PAYE</td>
+                        <td>
+                          <a href=""><i class="fas fa-close"></i></a>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="nav-profile"
+                  role="tabpanel"
+                  aria-labelledby="nav-profile-tab"
+                >
+                  ...
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
+
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdn.datatables.net/1.13.7/js/dataTables.bootstrap5.min.js"></script>
     <script src="js/app.js"></script>
+
+    <script>
+      new DataTable("#example", {
+        info: false,
+
+        paging: false,
+      });
+    </script>
   </body>
 </html>
