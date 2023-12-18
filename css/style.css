@@ -1,0 +1,20 @@
+.sidebar {
+    background-color: #0080f7;
+    height: 875px;
+    margin-top: 20px;
+    border-radius: 39px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+}
+.sidebar h4 {
+    background: #fff;
+    border-radius: 15px;
+    padding: 20px 15px 40px;
+    color: #000;
+}
+
+.sidebar a {
+    text-decoration: none;
+}
