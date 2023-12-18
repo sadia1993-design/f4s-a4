@@ -1,3 +1,8 @@
+p, h1,h2,h3,h4,h5,h6{
+margin: 0;
+padding: 0;
+}
+ul{margin: 0%; padding: 0%; list-style: none;}
 .sidebar {
     background-color: #0080f7;
     height: 875px;
@@ -6,7 +11,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 20px;
+    padding: 20px 20px 20px 4px;
 }
 .sidebar h4 {
     background: #fff;
@@ -17,4 +22,239 @@
 
 .sidebar a {
     text-decoration: none;
+}
+a.site-logo {
+    margin: 0 0px 0 15px;
+}
+.sidebar ul li {
+    border-radius: 100px;
+    padding: 10px 38px;
+    margin-bottom: 20px;
+}
+.sidebar ul li.active{
+    background-color: #fff;
+}
+.sidebar ul li.active a{
+    color: #000;
+}
+.sidebar ul li a{
+    color: #fff;
+}
+.sidebar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.sidebar a.help{
+    color: #fff;
+    padding: 10px 38px;
+}
+
+/* analytics */
+.analytics .bg-white {
+    flex-basis: 52%;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 23px;
+    padding: 8px;
+    
+}
+.analytics {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 26px;
+    justify-content: space-between;
+}
+
+.inVsEx {
+    display: flex;
+}
+.income, .expense {
+    text-align: center;
+}
+.balance {
+    flex-basis: 49%;
+    background: #ededed;
+    border-radius: 32px;
+}
+.expense {
+    margin-left: 17px;
+}
+
+.income h2, .expense h2 {
+    font-size: 19px;
+}
+.month {
+    flex-basis: 49%;
+    background: #ededed;
+    border-radius: 32px;
+    display: grid;
+    place-items: center;
+    padding: 5px 0;
+}
+.balance h2 {
+    color: #6a6fcc;
+}
+
+.balance {
+    display: grid;
+    place-items: center;
+    padding: 5px 0;
+}
+.balance p, .month p{
+    color: #6a6fcc;
+}
+button.invoice, button.expense, button.tasks {
+    flex-basis: 14%;
+    background: #0080f6;
+    border: 0;
+    color: #fff;
+    border-radius: 13px;
+    height: 86px;
+    font-size: 20px;
+}
+button.expense{
+    background-color: #8a8a8a;
+}
+button.tasks{
+    background-color: transparent;
+    border:2px dashed #fe6060;
+    color: #fe6060;
+}
+
+/*categories*/
+.categories {
+    background: #fff;
+    border-radius: 12px;
+    padding: 28px;
+}
+
+.category-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.salary-wrap {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.salary-wrap i {
+    margin-right: 13px;
+    background: #0080f6;
+    color: #fff;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 6px;
+}
+
+.salary-wrap h4 {
+    font-size: 19px;
+    color: #000 !important;
+}
+
+.categories ul {
+    margin-top: 28px;
+}
+
+.categories h4 {
+    color: #555cb3;
+}
+.bg-white{
+    background-color: #fff;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+}
+.tax-due {
+    background: #0080f6;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+}
+.info-wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr .5fr;
+    grid-template-rows: auto auto auto;
+    grid-gap: 15px;
+    margin-top: 30px;
+}
+.tax-due.two {
+    margin: 10px 0;
+}
+.sidebar ul li a i {
+    margin-right: 14px;
+}
+
+
+/* sales */
+.transaction {
+    display: flex;
+    gap: 10px;
+    margin-top: 17px;
+}
+
+.transaction .bg-white {
+    flex-basis: 57%;
+    display: flex !important;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px 
+}
+.transaction .bg-white h4{
+    color: #0080f6;
+}
+.transaction .bg-white form {
+    position: relative;
+    flex-basis: 70%;
+}
+.transaction .bg-white form input {
+    border: 2px solid #0080f6;
+    border-radius: 100px;
+    width: 100%;
+}
+.transaction .bg-white form button {
+    border: 0;
+    background: transparent;
+    color: #0080f6;
+    position: absolute;
+    right: 0;
+    top: 6px;
+}
+.transaction button {
+    flex-basis: 21%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+}
+.sales-tab li.nav-item {
+    background: #0080f6;
+    margin-right: 10px;
+    border: 0 !important;
+    width: 200px;
+    color: #fff !important;
+    text-align: center;
+    border-radius: 50px 50px 0px 0px;
+}
+.sales-tab .nav-tabs .nav-link.active {
+    background: #fff;
+    margin-right: 10px;
+    border: 0 !important;
+    width: 200px;
+    color: #000;
+    text-align: center;
+    border-radius: 50px 50px 0px 0px;
+    border: 0 !important;
 }
